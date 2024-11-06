@@ -1,0 +1,18 @@
+<!-- myapp/templates/myapp/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django StapModel App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1><a href="{% url 'myapp:stapmodel-list' %}">StapModel App</a></h1>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

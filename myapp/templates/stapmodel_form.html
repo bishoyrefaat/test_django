@@ -1,0 +1,10 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+    <h2>StapModel Detail</h2>
+    <p><strong>Name:</strong> {{ stapmodel.name }}</p>
+    <p><strong>Odoo ID:</strong> {{ stapmodel.odoo_id }}</p>
+    <a href="{% url 'myapp:stapmodel-update' stapmodel.pk %}" class="btn btn-warning">Edit</a>
+    <a href="{% url 'myapp:stapmodel-delete' stapmodel.pk %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'myapp:stapmodel-list' %}" class="btn btn-secondary">Back to List</a>
+{% endblock %}
